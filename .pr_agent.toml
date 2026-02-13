@@ -10,6 +10,9 @@ fallback_models = ["gpt-5.1-codex-max", "gpt-5-codex", "gpt-4o"]
 # Token 限制（Codex 通常有很大的 context）
 max_model_tokens = 200000  # 设置一个大值，PR Agent 会根据实际模型能力调整
 
+# 推理强度（low/medium/high）
+reasoning_effort = "high"
+
 # 日志级别
 verbosity_level = 2
 
