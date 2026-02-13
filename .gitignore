@@ -13,4 +13,3 @@ build/
 docs/.cache/
 .qodo
 poetry.lock
-test.sh
