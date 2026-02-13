@@ -73,7 +73,7 @@ persistent_comment = true
 publish_output_no_suggestions = true
 
 # 最大化评论数量（处理超大 PR）
-num_max_findings = 30
+num_max_findings = 200
 
 # 标签
 enable_review_labels_effort = true
@@ -81,14 +81,14 @@ enable_review_labels_security = true
 
 [pr_code_suggestions]
 # 代码建议数量（最大化）
-num_code_suggestions = 15
+num_code_suggestions = 30
 suggestions_score_threshold = 0
 focus_only_on_problems = false
 persistent_comment = true
 
 [pr_description]
 # 大 PR 分批处理配置（处理超大 PR）
-max_ai_calls = 12
+max_ai_calls = 50
 async_ai_calls = true
 enable_large_pr_handling = true
 
@@ -106,5 +106,5 @@ final_update_message = true
 force_update_from_diff = true
 
 [bitbucket_app]
-# 避免获取完整文件（关键：处理大 PR）
-avoid_full_files = true
+# 需要全量审核时，务必获取完整文件
+avoid_full_files = false
